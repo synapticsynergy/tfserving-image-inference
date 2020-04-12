@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 Download the model checkpoints saved to github: [Covid-net keras](https://github.com/lindawangg/COVID-Net/tree/covidnet-keras)
 
-Specifically download the `hdf5` type of pretrained model.
+Specifically download the `hdf5` type of pretrained model. Then unzip and save the hdf5 file in a directory labeled `model/` in the root directory.
 
 This file should contain both the graph of the model, and the pretrained weights. 
 
