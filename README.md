@@ -20,3 +20,7 @@ This file should contain both the graph of the model, and the pretrained weights
 To convert this model to saved_model format, make sure you are in the model_converter conda environment, then run the following command:
 
 ```python model_converter.py```
+
+# After model has been converted into saved model format. Run using docker. Change the source path to reflect the absolute path to saved_model.
+
+`docker run -p 8501:8501 -e MODEL_NAME='covid-test' --mount type=bind,source=/Users/myusername/Desktop/repos/tfserving-image-inference/saved_model/,target=/models/covid-test tensorflow/serving`
